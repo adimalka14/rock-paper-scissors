@@ -1,0 +1,45 @@
+.user-options-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 2;
+  gap: 4em;
+  padding: 4em;
+}
+.user-options-container .rock-container, .user-options-container .paper-container, .user-options-container .scissors-container {
+  flex: 0 0 auto;
+  height: 9em;
+  width: 9em;
+}
+.user-options-container .rock-container:hover, .user-options-container .paper-container:hover, .user-options-container .scissors-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 3;
+  gap: 2em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 85vh;
+  max-width: 97vw;
+}
+
+div {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

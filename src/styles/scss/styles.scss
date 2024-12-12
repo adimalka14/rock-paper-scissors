@@ -1,0 +1,22 @@
+@use "components/user-options";
+@use "components/game-board";
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  min-height: 85vh;
+  max-width: 97vw;
+}
+
+
+
+div{
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+

@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "live-server",
-    "build": "sass --watch scss:css"
+    "sass:watch": "sass --watch src/styles/scss/styles.scss:src/styles/css/styles.css"
   },
   "devDependencies": {
     "live-server": "^1.2.2",

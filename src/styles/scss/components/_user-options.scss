@@ -1,0 +1,22 @@
+.user-options-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    flex: 2;
+    gap: 4em;
+    padding: 4em;
+
+    .rock-container, .paper-container, .scissors-container {
+        flex: 0 0 auto;
+        height: 9em;
+        width: 9em;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
