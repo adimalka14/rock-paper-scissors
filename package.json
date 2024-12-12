@@ -1,0 +1,18 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "simple game with  vanillaJS, scss and html.",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^3.4.2",
+    "sass": "^1.81.1"
+  },
+  "author": "Adi Malka",
+  "license": "ISC"
+}
