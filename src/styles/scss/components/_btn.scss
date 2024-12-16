@@ -1,0 +1,37 @@
+@use "../utils/varibales" as *;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border: transparent;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  cursor: pointer;
+  height: 2em;
+  width: 6em;
+  opacity: 0.8;
+  color: white;
+  white-space: nowrap;
+
+  &:hover{
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+#play{
+  visibility: hidden;
+  background: $secondary-color;
+}
+
+.reset-container{
+  align-self: start;
+  grid-area: 1 / 1 / 2 / 2;
+
+  #reset{
+    background: #ff7575;
+  }
+}

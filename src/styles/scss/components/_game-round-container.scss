@@ -1,0 +1,35 @@
+@use "../utils/varibales" as *;
+
+.game-round-container{
+    grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    flex: 10;
+    gap: 2em;
+    margin-top: 1em;
+
+  .computer-choice{
+    flex: 0 0 auto;
+    height: 12em;
+    width: 12em;
+    background-size: 9em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $secondary-color;
+    border: transparent solid 2px;
+    border-radius: 50%;
+
+    background-image: url("../../../../assets/question.png");
+  }
+
+  .end-game-message{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+}
+

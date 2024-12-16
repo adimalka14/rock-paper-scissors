@@ -1,40 +1,171 @@
 .user-options-container {
+  grid-area: 3/1/4/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.user-options-container p {
+  font-size: 2em;
+  font-weight: bold;
+}
+.user-options-container .options {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 2;
-  gap: 4em;
-  padding: 4em;
+  gap: 6em;
+  padding: 1em 4em;
 }
-.user-options-container .rock-container, .user-options-container .paper-container, .user-options-container .scissors-container {
+.user-options-container .rock {
+  background-image: url("../../../../assets/rock.png");
+}
+.user-options-container .paper {
+  background-image: url("../../../../assets/paper.png");
+}
+.user-options-container .scissors {
+  background-image: url("../../../../assets/scissors.png");
+}
+.user-options-container .option {
   flex: 0 0 auto;
-  height: 9em;
-  width: 9em;
+  height: 11em;
+  width: 11em;
+  background-size: 9em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: aquamarine;
+  border: transparent solid 2px;
+  border-radius: 50%;
+  opacity: 0.6;
 }
-.user-options-container .rock-container:hover, .user-options-container .paper-container:hover, .user-options-container .scissors-container:hover {
+.user-options-container .option:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .option {
+    height: 3em;
+    width: 3em;
+    background-size: 2em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .option {
+    height: 2em;
+    width: 2em;
+    background-size: 2em;
+  }
+}
+.game-round-container {
+  grid-area: 1/2/3/3;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  flex: 10;
+  gap: 2em;
+  margin-top: 1em;
+}
+.game-round-container .computer-choice {
+  flex: 0 0 auto;
+  height: 12em;
+  width: 12em;
+  background-size: 9em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: aquamarine;
+  border: transparent solid 2px;
+  border-radius: 50%;
+  background-image: url("../../../../assets/question.png");
+}
+.game-round-container .end-game-message {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: transparent;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  font-size: 2em;
+  cursor: pointer;
+  height: 2em;
+  width: 6em;
+  opacity: 0.8;
+  color: white;
+  white-space: nowrap;
+}
+.btn:hover {
+  opacity: 1;
   transform: scale(1.1);
 }
 
-.board-container {
+#play {
+  visibility: hidden;
+  background: aquamarine;
+}
+
+.reset-container {
+  align-self: start;
+  grid-area: 1/1/2/2;
+}
+.reset-container #reset {
+  background: #ff7575;
+}
+
+.result-container {
+  grid-area: 1/3/3/4;
+  align-self: start;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 3;
-  gap: 2em;
+  flex-direction: column;
+  background: aquamarine;
+  color: white;
+}
+.result-container .result {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: start;
+  white-space: nowrap;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  width: 100%;
+  height: 100%;
+  gap: 4em;
+}
+
+html {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-height: 85vh;
-  max-width: 97vw;
+  border: black solid 2px;
+  background: #f8e8e8;
+  height: 100%;
+  width: 100%;
 }
 
 div {

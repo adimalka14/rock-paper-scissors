@@ -1,22 +1,72 @@
+@use "../utils/varibales" as *;
+
 .user-options-container {
+    grid-area: 3 / 1 / 4 / 4;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
-    flex: 2;
-    gap: 4em;
-    padding: 4em;
+    p{
+        font-size: 2em;
+        font-weight: bold;
+    }
 
-    .rock-container, .paper-container, .scissors-container {
+   .options{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6em;
+        padding: 1em 4em;
+    }
+
+    .rock {
+        background-image: url("../../../../assets/rock.png");
+    }
+
+    .paper {
+        background-image: url("../../../../assets/paper.png");
+    }
+
+    .scissors {
+        background-image: url("../../../../assets/scissors.png");
+    }
+
+    .option {
         flex: 0 0 auto;
-        height: 9em;
-        width: 9em;
-
+        height: 11em;
+        width: 11em;
+        background-size: 9em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $secondary-color;
+        border: transparent solid 2px;
+        border-radius: 50%;
+        opacity: 0.6;
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
+            opacity: 1;
         }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+  .option{
+    height: 3em;
+    width: 3em;
+    background-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .option{
+        height: 2em;
+        width: 2em;
+        background-size: 2em;
     }
 }

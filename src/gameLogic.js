@@ -1,13 +1,13 @@
 export const result = {
-        user: 0,
-        computer: 0,
-        ties: 0,
+    user: 0,
+    computer: 0,
+    ties: 0,
 };
 
 export const options = {
-        rock: 'Rock',
-        paper: 'Paper',
-        scissors: 'Scissors'
+    rock: 'rock',
+    paper: 'paper',
+    scissors: 'scissors',
 };
 
 export const gameState = {
@@ -20,9 +20,11 @@ export const checkResult = (user, computer) => {
     if (user === computer) {
         result.ties++;
         return gameState.draw;
-    } else if (user === options.rock && computer === options.scissors
-            || user === options.paper && computer === options.rock
-            || user === options.scissors && computer === options.paper) {
+    } else if (
+        (user === options.rock && computer === options.scissors) ||
+        (user === options.paper && computer === options.rock) ||
+        (user === options.scissors && computer === options.paper)
+    ) {
         result.user++;
         return gameState.userWin;
     } else {
@@ -33,11 +35,16 @@ export const checkResult = (user, computer) => {
 
 export const playRound = (user) => {
     const computer = Object.values(options)[Math.floor(Math.random() * 3)];
-    return checkResult(user, computer);
+    return {
+        user,
+        computer,
+        roundResult: checkResult(user, computer),
+        result,
+    };
 };
 
 export const resetGame = () => {
     result.user = 0;
     result.computer = 0;
     result.ties = 0;
-}
+};

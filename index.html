@@ -7,37 +7,48 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-<div class="reset-container">
-    <button class="reset-btn">Reset</button>
-</div>
+
 <div class="board-container">
-    <div class="computer-choice-container">
-        <div class="computer-choice">computer choice</div>
+    <div class="reset-container">
+        <button id="reset" class="btn reset">Reset</button>
     </div>
-    <div class="end-game-container">
-        <div class="end-game-btn">End Game</div>
-    </div>
-    <div class="result-container">
-        <div class="result">
-            <p>נצחונות :<span class="wins">0</span></p>
-            <p>הפסדים :<span class="lose">0</span></p>
-            <p>תיקו :<span class="ties">0</span></p>
+
+    <div class="game-round-container">
+        <div class="computer-choice-container">
+            <div class="computer-choice"></div>
+        </div>
+        <div class="end-game-container">
+            <div class="end-game-message">End Game</div>
+        </div>
+        <div class="play-btn-container">
+            <button id="play" class="btn play">Play Again</button>
         </div>
     </div>
-    <div class="play-btn-container">
-        <button class="play-btn">Play</button>
+
+    <div class="result-container">
+        <div class="result">
+            <p>wins : <span class="wins">0</span></p>
+            <p>loses : <span class="lose">0</span></p>
+            <p>ties : <span class="ties">0</span></p>
+        </div>
     </div>
+
+    <div class="user-options-container">
+        <p>Choose your option</p>
+        <div class="options">
+            <div class="rock-container">
+                <div class="option rock"></div>
+            </div>
+            <div class="paper-container">
+                <div class="option paper"></div>
+            </div>
+            <div class="scissors-container">
+                <div class="option scissors"></div>
+            </div>
+        </div>
+    </div>
+
 </div>
-<div class="user-options-container">
-    <div class="rock-container">
-        <div class="rock">אבן</div>
-    </div>
-    <div class="paper-container">
-        <div class="paper">נייר</div>
-    </div>
-    <div class="scissors-container">
-        <div class="scissors">מספריים</div>
-    </div>
-</div>
+<script type="module" src="src/controller.js"></script>
 </body>
 </html>
