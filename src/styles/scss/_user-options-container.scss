@@ -1,4 +1,4 @@
-@use "../utils/varibales" as *;
+@use "utils/varibales" as *;
 
 .user-options-container {
   grid-area: 3 / 1 / 4 / 4;
@@ -26,15 +26,15 @@
   }
 
   .rock {
-    background-image: url("/public/assets/rock.png");
+    background-image: url("../../../public/assets/rock.png");
   }
 
   .paper {
-    background-image: url("/public/assets/paper.png");
+    background-image: url("../../../public/assets/paper.png");
   }
 
   .scissors {
-    background-image: url("/public/assets/scissors.png");
+    background-image: url("../../../public/assets/scissors.png");
   }
 
   .option {

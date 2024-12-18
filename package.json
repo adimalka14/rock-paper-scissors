@@ -5,9 +5,9 @@
   "type": "module",
   "main": "index.html",
   "scripts": {
-    "start": "live-server",
-    "sass:compile": "sass src/styles/scss/styles.scss:src/styles/css/styles.css",
-    "sass:watch": "sass --watch src/styles/scss/styles.scss:src/styles/css/styles.css"
+    "start": "live-server --open=./index.html",
+    "sass:compile": "sass src/styles/scss/main.scss:src/styles/css/styles.css",
+    "sass:watch": "sass --watch src/styles/scss/main.scss:src/styles/css/styles.css"
   },
   "devDependencies": {
     "live-server": "^1.2.2",

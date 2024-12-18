@@ -1,4 +1,4 @@
-@use "../utils/varibales" as *;
+@use "utils/varibales" as *;
 
 .game-round-container{
     display: flex;
@@ -19,7 +19,7 @@
     border: transparent solid 2px;
     border-radius: 50%;
 
-    background-image: url("/public/assets/question.png");
+    background-image: url("../../../public/assets/question.png");
   }
 
   .end-game-message{
