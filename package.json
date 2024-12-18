@@ -6,15 +6,14 @@
   "main": "index.html",
   "scripts": {
     "start": "live-server",
+    "sass:compile": "sass src/styles/scss/styles.scss:src/styles/css/styles.css",
     "sass:watch": "sass --watch src/styles/scss/styles.scss:src/styles/css/styles.css"
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0",
     "live-server": "^1.2.2",
     "prettier": "^3.4.2",
     "sass": "^1.81.1"
   },
   "author": "Adi Malka",
-  "homepage": "https://adimalka14.github.io/rock-paper-scissors",
   "license": "ISC"
 }
