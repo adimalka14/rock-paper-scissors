@@ -6,7 +6,7 @@ export async function renderComputerChoice(computerChoice) {
     const computerChoiceDiv = document.querySelector(SELECTORS.COMPUTER_CHOICE);
 
     await executeAnimation(computerChoiceDiv, ANIMATIONS.SPIN, 1500);
-    computerChoiceDiv.style.backgroundImage = `url('../assets/${computerChoice}.png')`;
+    computerChoiceDiv.style.backgroundImage = `url('/public/assets/${computerChoice}.png')`;
 }
 
 export function renderEndRoundMessage(roundResultMessage, show = true) {
@@ -64,5 +64,5 @@ export function resetUserOptions() {
 
 export function resetComputerChoice() {
     const computerChoice = document.querySelector(SELECTORS.COMPUTER_CHOICE);
-    computerChoice.style.backgroundImage = `url('../assets/question.png')`;
+    computerChoice.style.backgroundImage = `url('/public/assets/question.png')`;
 }
