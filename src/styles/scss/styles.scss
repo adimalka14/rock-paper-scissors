@@ -1,19 +1,15 @@
-@use "components/user-options";
-@use "components/game-board";
+@use "components/layout";
 @use "utils/varibales" as *;
-html{
-  height: 95vh;
-  width: 100vw;
+@use "utils/animations" as *;
+
+body{
+  height: 99vh;
+  width: 99vw;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-body{
-  border: black solid 2px;
   background: $bg-color;
-  height: 100%;
-  width: 100%;
+  margin: 0;
 }
 
 div{

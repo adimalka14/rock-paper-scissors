@@ -1,0 +1,57 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shrink-grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    background-color: #ff7575;
+    transform: rotate(10deg);
+  }
+  25% {
+    background-color: #ac4242;
+    transform: rotate(0deg);
+  }
+  50% {
+    background-color: #ff7575;
+    transform: rotate(-10deg);
+  }
+  100% {
+    background-color: #ac4242;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes victory-flash {
+  0% {
+    transform: scale(1.1);
+    background-color: #9df8bd;
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: white;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    background-color: #9df8bd;
+    opacity: 0.8;
+  }
+}

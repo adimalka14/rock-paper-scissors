@@ -38,7 +38,7 @@ export const playRound = (user) => {
     return {
         user,
         computer,
-        roundResult: checkResult(user, computer),
+        roundResultMessage: checkResult(user, computer),
         result,
     };
 };
