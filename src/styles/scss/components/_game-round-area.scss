@@ -35,6 +35,12 @@
     .game-round-container{
       gap: 1em;
       margin-top: 0.5em;
+
+      .computer-choice{
+        height: 9em;
+        width: 9em;
+        background-size: 7em;
+      }
     }
 }
 

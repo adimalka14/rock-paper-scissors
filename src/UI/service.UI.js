@@ -31,7 +31,7 @@ export const GameUI = {
     resetUI() {
         renderInfoMessage('choose your option');
         renderPlayAgainButton(false);
-        renderEndRoundMessage('');
+        renderEndRoundMessage('End Game', false);
         resetUserOptions();
         resetComputerChoice();
     },

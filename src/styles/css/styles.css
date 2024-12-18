@@ -31,6 +31,11 @@
     gap: 1em;
     margin-top: 0.5em;
   }
+  .game-round-container .computer-choice {
+    height: 9em;
+    width: 9em;
+    background-size: 7em;
+  }
 }
 .btn {
   display: flex;
@@ -107,6 +112,7 @@
 .user-options-container p {
   font-size: 2em;
   font-weight: bold;
+  margin: 0;
 }
 .user-options-container .options {
   display: flex;
@@ -164,7 +170,8 @@
     font-size: 1.5em;
   }
   .user-options-container .options {
-    gap: 3em;
+    gap: 2em;
+    padding: 1em 0;
   }
   .user-options-container .options .option {
     height: 9em;
@@ -306,11 +313,6 @@ body {
   justify-content: center;
   background: #f8e8e8;
   margin: 0;
-}
-
-div {
-  border: 2px solid black;
-  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
