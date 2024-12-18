@@ -16,7 +16,7 @@
   background-color: aquamarine;
   border: transparent solid 2px;
   border-radius: 50%;
-  background-image: url("public/assets/question.png");
+  background-image: url("/public/assets/question.png");
 }
 .game-round-container .end-game-message {
   visibility: hidden;
@@ -124,13 +124,13 @@
   padding: 1em 4em;
 }
 .user-options-container .rock {
-  background-image: url("public/assets/rock.png");
+  background-image: url("/public/assets/rock.png");
 }
 .user-options-container .paper {
-  background-image: url("public/assets/paper.png");
+  background-image: url("/public/assets/paper.png");
 }
 .user-options-container .scissors {
-  background-image: url("public/assets/scissors.png");
+  background-image: url("/public/assets/scissors.png");
 }
 .user-options-container .option {
   flex: 0 0 auto;
