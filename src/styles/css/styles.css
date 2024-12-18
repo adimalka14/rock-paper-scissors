@@ -124,7 +124,7 @@
   padding: 1em 4em;
 }
 .user-options-container .rock {
-  background-image: url("../../../../assets/rock.png");
+  background-image: url("/assets/rock.png");
 }
 .user-options-container .paper {
   background-image: url("../../../../assets/paper.png");
