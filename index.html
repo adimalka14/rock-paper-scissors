@@ -27,9 +27,16 @@
 
     <div class="result-container">
         <div class="result">
-            <p>wins&nbsp&nbsp : <span class="wins">0</span></p>
-            <p>loses&nbsp : <span class="lose">0</span></p>
-            <p>ties : <span class="ties">0</span></p>
+            <div class="labels">
+                <span>Wins</span>
+                <span>Loses</span>
+                <span>Ties</span>
+            </div>
+            <div class="values">
+                <span class="wins">0</span>
+                <span class="lose">0</span>
+                <span class="ties">0</span>
+            </div>
         </div>
     </div>
 
@@ -37,13 +44,13 @@
         <p class="info-message">Choose your option</p>
         <div class="options">
             <div class="rock-container">
-                <div class="option rock"></div>
+                <div class="option rock" data-value="rock"></div>
             </div>
             <div class="paper-container">
-                <div class="option paper"></div>
+                <div class="option paper" data-value="paper"></div>
             </div>
             <div class="scissors-container">
-                <div class="option scissors"></div>
+                <div class="option scissors" data-value="scissors"></div>
             </div>
         </div>
     </div>

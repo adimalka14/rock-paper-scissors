@@ -1,6 +1,6 @@
 import { playRound, resetGame } from './gameLogic.js';
 import { GameUI } from './UI/service.UI.js';
-import { SELECTORS, IDS, CLASSES } from './UI/constants.UI.js';
+import { SELECTORS, IDS, CLASSES } from './UI/selectors.UI.js';
 
 const userOptions = document.querySelectorAll(SELECTORS.USER_OPTIONS);
 const resetBtn = document.getElementById(IDS.RESET_BTN);
@@ -16,7 +16,7 @@ Array.from(userOptions).forEach((option) => {
             return;
         }
 
-        const userChoice = option.classList[1];
+        const userChoice = option.dataset.value;
         const roundResult = playRound(userChoice);
         await GameUI.showRoundResult(roundResult);
     });

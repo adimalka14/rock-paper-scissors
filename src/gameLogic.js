@@ -34,7 +34,7 @@ export const checkResult = (user, computer) => {
 };
 
 export const playRound = (user) => {
-    const computer = Object.values(options)[Math.floor(Math.random() * 3)];
+    const computer = getRandomOption();
     return {
         user,
         computer,
@@ -42,6 +42,8 @@ export const playRound = (user) => {
         result,
     };
 };
+
+const getRandomOption = () => Object.values(options)[Math.floor(Math.random() * Object.values(options).length)];
 
 export const resetGame = () => {
     result.user = 0;

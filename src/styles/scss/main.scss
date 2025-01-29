@@ -3,18 +3,13 @@
 @use "utils/animations" as *;
 
 body{
-  height: 99vh;
-  width: 99vw;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background: $bg-color;
   margin: 0;
 }
-
-//div{
-//  border: 2px solid black;
-//  border-radius: 10px;
-//}
 
 

@@ -1,5 +1,5 @@
 import { executeAnimation, renderElementText, renderVisibility, toggleClassOnElement } from './utils.UI.js';
-import { ANIMATIONS, SELECTORS, IDS, CLASSES } from './constants.UI.js';
+import { ANIMATIONS, SELECTORS, IDS, CLASSES } from './selectors.UI.js';
 import { gameState } from '../gameLogic.js';
 
 export async function renderComputerChoice(computerChoice) {

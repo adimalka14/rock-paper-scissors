@@ -17,14 +17,22 @@
     .result{
         display: flex;
         width: 60%;
-        flex-direction: column;
-        align-items: start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         white-space: nowrap;
         font-size: 2em;
         font-weight: bold;
+        gap: 0.3em;
 
-        p {
-            margin: 0;
+        .labels, .values{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .values ::before{
+            content: ": ";
         }
     }
 }

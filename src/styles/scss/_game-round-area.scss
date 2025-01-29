@@ -3,16 +3,16 @@
 .game-round-container{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
-    gap: 2em;
+    gap: 5em;
     margin-top: 1em;
 
   .computer-choice{
     flex: 0 0 auto;
     height: 12em;
     width: 12em;
-    background-size: 9em;
+    background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: $secondary-color;
@@ -27,19 +27,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 5em;
   }
 }
 
 @media only screen and (max-width: 600px) {
     .game-round-container{
-      gap: 1em;
+      gap: 2em;
       margin-top: 0.5em;
 
       .computer-choice{
-        height: 9em;
-        width: 9em;
-        background-size: 7em;
+        height: 10em;
+        width: 10em;
+      }
+
+      .end-game-message {
+        font-size: 3.5em;
       }
     }
 }

@@ -3,11 +3,11 @@ export function renderElementText(element, text) {
 }
 
 export async function executeAnimation(selector, animation, ms = 0) {
-    selector.classList.add(animation);
+    selector?.classList?.add(animation);
     if (ms === 0) return;
 
     await sleep(ms);
-    selector.classList.remove(animation);
+    selector?.classList?.remove(animation);
 }
 
 export function renderVisibility(element, visible) {
@@ -15,7 +15,7 @@ export function renderVisibility(element, visible) {
 }
 
 export function toggleClassOnElement(element, className, add = true) {
-    add ? element.classList.add(className) : element.classList.remove(className);
+    add ? element?.classList?.add(className) : element?.classList?.remove(className);
 }
 
 async function sleep(ms) {
