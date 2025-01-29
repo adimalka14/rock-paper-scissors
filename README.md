@@ -1,6 +1,6 @@
 # ✊✋✌️ Rock-Paper-Scissors 🎮
 
-A classic Rock-Paper-Scissors game built using **HTML**, **SCSS**, and modern **JavaScript (ES6+)**, with a strong focus on the **MVC architecture**. The game features a fully **responsive design**, ensuring a smooth experience on both desktop and mobile devices.---
+A classic Rock-Paper-Scissors game built using **HTML**, **SCSS**, and modern **JavaScript (ES6+)**, with a strong focus on the **MVC architecture**. The game features a fully **responsive design**, ensuring a smooth experience on both desktop and mobile devices.
 ---
 
 ## Live Demo 🌐 
